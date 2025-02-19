@@ -1,4 +1,4 @@
-algoritmo "ValidaÁ„o de Sexo"
+algoritmo "Valida√ß√£o de Sexo"
 var
    sexo: caractere
 inicio
@@ -6,9 +6,13 @@ inicio
    leia(sexo)
 
    enquanto (sexo <> "M") e (sexo <> "F") faca
-      escreva("Entrada inv·lida! Digite apenas 'M' ou 'F': ")
+      escreva("Entrada inv√°lida! Digite apenas 'M' ou 'F': ")
       leia(sexo)
    fimenquanto
 
-   escreva("Sexo v·lido: ", sexo)
+   se sexo = "M" entao
+      escreva("Sexo v√°lido: Masculino")
+   senao
+      escreva("Sexo v√°lido: Feminino")
+   fimse
 fimalgoritmo
